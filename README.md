@@ -16,3 +16,24 @@ Website: [Coming Soon](https://example.com/)
   -  [screenWatcher.go](https://github.com/scaredos/piratedex/blob/main/api/screenWatcher.go)
      - Returns output of `screen -ls` in JSON format
      - Example: `{"screens":[], "success":true}`
+ 
+ 
+ 
+ ### [utils](https://github.com/scaredos/piratedex/tree/main/utils)
+  - [magnetparse.py](https://github.com/scaredos/piratedex/blob/main/utils/magnetparse.py)
+    - Python module for parsing magnets
+    - Example:
+      ```
+      # Import the library
+      import magnetparse
+      
+      parser_obj = magnetparse.MagnetParse('magnet:xt=urn:btih:0000000000000000000000000000000000000000&dn=Fake%20Torrent&tr=udp%3A%2F%2Ftracker.com%3A80%2Fannounce')
+      # Get JSON output
+      json_output = parser_obj.json
+      
+      # Get Torrent Name
+      torrent_name = parser.torrent_name
+      
+      # Get Info Hash
+      info_hash = parser.info_hash
+      ```
