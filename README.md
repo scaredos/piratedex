@@ -7,7 +7,7 @@ With PirateDex, users can easily access information about public torrents and tr
 
 Whether you are a content creator, a copyright holder, or an individual seeking to stay within the bounds of the law, PirateDex is a valuable resource for anyone looking to stay informed about the world of P2P downloading.
 
-Website: [Coming Soon](https://example.com/)
+Website: [piratedex.org](https://piratedex.org/)
 
 
 ## Index of files
