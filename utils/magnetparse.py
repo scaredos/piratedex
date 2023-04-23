@@ -12,9 +12,9 @@ class MagnetParse():
         magnet (str): Magnet Link
         """
         # Split our link into multiple sections
-        linkage = magnet.split('&')
+        linkage = magnet_uri.split('&')
 
-        if 'btih' not in magnet:
+        if 'btih' not in magnet_uri:
             raise Exception('Magnet not of type BTIH')
         # Set magnet variable
         self.magnet = magnet_uri
