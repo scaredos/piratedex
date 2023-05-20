@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-class MangetExtract:
+class MagnetExtract:
   def __init__(self, html: str):
     """
     Magnet Extraction module that returns list of magnets from HTML of website.
@@ -21,5 +21,5 @@ class MangetExtract:
             if link not in magnets:
                 magnets.append(link)
 
-    return magnets
+    self.magnets = magnets
   
