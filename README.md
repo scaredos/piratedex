@@ -37,3 +37,19 @@ Website: [piratedex.org](https://piratedex.org/)
       # Get Info Hash
       info_hash = parser.info_hash
       ```
+      
+  - [magnetextract.py](https://github.com/scaredos/piratedex/blob/main/utils/magnetextract.py)
+    - Python module for extracting magnets from HTML source code
+    - Example:
+      ```
+      # Import the library
+      import magnetextract
+      
+      somehtml = "<html><body><a href="magnet:?xt=urn:btih:XXXX2FAB23AF00002A260980004590DBE7A02220&tr=udp%3A%2F%2Ftracker.bitsearch.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.breizh.pm%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2920%2Fannounce">Magnet</a></body></html>"
+     
+      # Extract a list of magnets
+      parser_obj = magnetextract.MagnetExtract(somehtml)
+      
+      # Print the first magnet of the list
+      print(parser_obj.magnets[0]) 
+      ```
