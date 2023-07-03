@@ -17,7 +17,7 @@ def magnet_parse(magnet: str) -> dict:
         raise ValueError('Invalid magnet link')
 
     # Derive the info_hash from the ?xt=urn:bittorrent
-    info_hash = magnet.split('?xt=urn:btih:')[1]
+    info_hash = linkage[0].split('?xt=urn:btih:')[1]
 
     # Remove the info_hash from the list since we no longer need it
     linkage.pop(0)
