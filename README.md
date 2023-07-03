@@ -20,29 +20,31 @@ Website: [piratedex.org](https://piratedex.org/)
  
  
  ### [utils](https://github.com/scaredos/piratedex/tree/main/utils)
-  - [magnetparse.py](https://github.com/scaredos/piratedex/blob/main/utils/magnetparse.py)
+  - [magnet_parse.py](https://github.com/scaredos/piratedex/blob/main/utils/magnet_parse.py)
     - Python module for parsing magnets
     - Example:
       ```py
-      # Import the library
-      import magnetparse
-      
-      parser_obj = magnetparse.MagnetParse('magnet:xt=urn:btih:0000000000000000000000000000000000000000&dn=Fake%20Torrent&tr=udp%3A%2F%2Ftracker.com%3A80%2Fannounce')
-      # Get JSON output
-      json_output = parser_obj.json
-      
-      # Get Torrent Name
-      torrent_name = parser.torrent_name
-      
-      # Get Info Hash
-      info_hash = parser.info_hash
+      # Defined ...magnet_parse()... #
+
+      magnet = 'magnet:?xt=urn:btih:000000000000000000000&dn=Example&tr=udp%3A%2F%2Fpiratedex.org%3A80&'
+
+      parsed_magnet = magnet_parse(magnet)
+      """
+      parsed_magnet = {
+        'torrent_name': 'Example',
+        'info_hash': '000000000000000000000',
+        'raw_hash': b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00',
+        'trackers': ['udp://piratedex.org:80']
+      }
+      """
       ```
       
   - [find_magnets.py](https://github.com/scaredos/piratedex/blob/main/utils/find_magnets.py)
     - Python module for extracting magnets from HTML source code
     - Example:
       ```py
-      # Defined ...find_magnets()... # 
+      # Defined ...find_magnets()... #
+      
       some_html = "<html><body><a href="magnet:?xt=urn:btih:XXXX2FAB23AF00002A260980004590DBE7A02220&tr=udp%3A%2F%2Ftracker.bitsearch.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Fwww.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.breizh.pm%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2920%2Fannounce">Magnet</a></body></html>"
      
       # Find the magnets and create a generator
