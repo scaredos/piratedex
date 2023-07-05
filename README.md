@@ -1,5 +1,5 @@
 # piratedex
-Official repository for everything related to PirateDex
+Official repository for everything related to PirateDex.org
 
 PirateDex is a free-to-use platform that aims to provide users with reliable information about P2P downloaders to discourage piracy and promote responsible torrenting. 
 
