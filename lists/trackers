@@ -1,0 +1,42 @@
+#
+#    List of torrent trackers (including private trackers) scraped from popular (illegal) torrenting websites
+#    Designed for blocking these domains
+#    Curl: curl -s https://raw.githubusercontent.com/scaredos/piratedex/master/lists/trackers
+#
+
+explodie.org
+tracker.openbittorrent.com
+exodus.desync.com
+ipv4.tracker.harry.lu
+tracker.tiny-vps.com
+tracker.torrent.eu.org
+www.mvgroup.org
+tracker.coppersurfer.tk
+tracker.dler.org
+p4p.arenabg.com
+open.stealth.si
+9.rarbg.me
+9.rarbg.com
+9.rarbg.to
+tracker.opentrackr.org
+open.tracker.cl
+tracker.moeking.me
+opentracker.i2p.rocks
+tracker.pirateparty.gr
+tracker.animebytes.tv
+nyaa.tracker.wf
+anidex.moe
+tracker.anirena.com
+tracker-udp.anirena.com
+tracker.leechers-paradise.org
+tracker.cyberia.is
+tracker3.itzmx.com
+open.acgnxtracker.com
+retracker.lanta-net.ru
+tracker.files.fm
+tracker.kamigami.org
+aaa.army
+blokas.io
+routing.bgp.technology
+async.empirehost.me
+127.0.0.1.stackoverflow.tech
