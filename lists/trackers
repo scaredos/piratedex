@@ -1,6 +1,6 @@
 #
 #    List of torrent trackers (including private trackers) scraped from popular (illegal) torrenting websites
-#    Designed for blocking these domains
+#    Count: 180 domains
 #    Curl: curl -s https://raw.githubusercontent.com/scaredos/piratedex/main/lists/trackers
 #
 
