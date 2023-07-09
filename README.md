@@ -17,6 +17,9 @@ Website: [piratedex.org](https://piratedex.org/)
      - Returns output of `screen -ls` in JSON format
      - Example: `{"screens":[], "success":true}`
  
+### [lists](https://github.com/scaredos/piratedex/tree/main/lists)
+  - [trackers](https://github.com/scaredos/piratedex/blob/main/lists/trackers)
+    - List of popular torrent tracker domains for DNS blocklist
  
  
  ### [utils](https://github.com/scaredos/piratedex/tree/main/utils)
