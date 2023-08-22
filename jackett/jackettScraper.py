@@ -64,9 +64,14 @@ def get_magnets(feed_url: str) -> typing.Set[str]:
 
 if __name__ == '__main__':
     feed_urls = []
+    # Read feed_urls.txt and load URLs to list
     with open('feed_urls.txt', 'r') as file:
         feed_urls = [i for i in file.readlines()]
-
+    
     with open('magnets.jackett.txt', 'a+') as file:
+        # Iterate through feed_urls and write to magnets.jackett.txt
+        magnets = set()
         for url in feed_urls:
-            file.writelines(get_magnets(url))
+            magnets.update(get_magnets(url))
+            magnets.update(search_for_magnets_default(url))
+        file.writelines(magnets)
