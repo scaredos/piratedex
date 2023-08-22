@@ -21,7 +21,7 @@ Website: [piratedex.org](https://piratedex.org/)
 ### [jackett](https://github.com/scaredos/piratedex/tree/main/jackett)
   - [jackettScraper.py](https://github.com/scaredos/piratdex/blob/main/jackett/jackettScraper.py)
     - Returns list of magnets from Jackett API
-    - See [piratdex/jackett readme](https://github.com/scaredos/piratdex/blob/main/jackett/README.md)
+    - See [piratdex/jackett readme](https://github.com/scaredos/piratedex/blob/main/jackett/README.md)
 
 
 ### [lists](https://github.com/scaredos/piratedex/tree/main/lists)
