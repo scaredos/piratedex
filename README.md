@@ -32,10 +32,10 @@ Website: [piratedex.org](https://piratedex.org/)
  ### [utils](https://github.com/scaredos/piratedex/tree/main/utils)
   - [torrentParsing/](https://github.com/scaredos/piratedex/tree/main/utils/torrentParsing)
   - Tools for parsing magnets
-    - [torrentTypeDetection.java](https://github.com/scaredos/piratedex/blob/main/utils/torrentParsing/torrentTypeDetection.java)
+    - [torrentTypeDetection/torrentTypeDetection.java](https://github.com/scaredos/piratedex/blob/main/utils/torrentParsing/torrentTypeDetection.java)
       - Java program to determine type of torrent (Similar to Go program)
 
-    - [torrentTypeDetection.go](https://github.com/scaredos/piratedex/blob/main/utils/torrentParsing/torrentTypeDetection.go)
+    - [torrentTypeDetection/torrentTypeDetection.go](https://github.com/scaredos/piratedex/blob/main/utils/torrentParsing/torrentTypeDetection.go)
       - Go program to determine type of torrent (Similiar to Java program)
 
   
