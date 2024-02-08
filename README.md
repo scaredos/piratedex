@@ -18,12 +18,6 @@ Website: [piratedex.org](https://piratedex.org/)
      - Example: `{"screens":[], "success":true}`
 
 
-### [jackett](https://github.com/scaredos/piratedex/tree/main/jackett)
-  - [jackettScraper.py](https://github.com/scaredos/piratedex/blob/main/jackett/jackettScraper.py)
-    - Returns list of magnets from Jackett API
-    - See [piratdex/jackett readme](https://github.com/scaredos/piratedex/blob/main/jackett/README.md)
-
-
 ### [lists](https://github.com/scaredos/piratedex/tree/main/lists)
   - [trackers](https://github.com/scaredos/piratedex/blob/main/lists/trackers)
     - List of popular torrent tracker domains for DNS blocklist
